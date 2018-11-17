@@ -3,7 +3,7 @@
 int vfsmakedir(char parent_path[MAX_PATH_SIZE],
 		char dir_name[MAX_FILE_NAME_SIZE]) {
 	//checking mount status
-	if (ismounted != 1) {
+	if (ismounted != 1){
 		return MAKEDIR_VFS_NOT_MOUNTED;
 	}
 	if (globaldata->num_f_d_used >= globaldata->max_num_f_d) {
